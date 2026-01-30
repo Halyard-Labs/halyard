@@ -16,7 +16,7 @@ pnpm lint        # Run ESLint
 ## Environment Variables
 
 Required in `.env.local`:
-- `SENDGRID_API_KEY` - SendGrid API key for email
+- `RESEND_API_KEY` - Resend API key for email
 - `EMAIL` - Destination email for contact form submissions
 
 ## Structure
@@ -24,7 +24,7 @@ Required in `.env.local`:
 - `pages/` - Next.js pages (index, contact)
 - `pages/api/email.ts` - Contact form handler (sends receipt + forwards inquiry)
 - `components/` - UI components (button, footer, grid, logo, nav, textfield)
-- `lib/sendgrid.tsx` - SendGrid client setup
+- `lib/resend.ts` - Resend client setup
 
 ## Contact Form Flow
 
