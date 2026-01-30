@@ -1,11 +1,11 @@
-import { HTMLProps, FC } from 'react'
+import { HTMLProps, FC, PropsWithChildren } from 'react'
 import styles from './styles.module.css'
 
 type Props = {
   label: string
 }
 
-export const Field: FC<{ label: string; id?: string }> = ({
+export const Field: FC<PropsWithChildren<{ label: string; id?: string }>> = ({
   children,
   label,
   id,

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link'
 import { FC } from 'react'
 import Logo from '../logo'
@@ -8,15 +7,10 @@ const Nav: FC = () => (
   <header>
     <nav className={styles.nav}>
       <Link href="/">
-        <a>
-          <Logo />
-        </a>
+        <Logo />
       </Link>
       <div className={styles.navItems}>
-        {/* <a href="/">About</a> */}
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </nav>
   </header>

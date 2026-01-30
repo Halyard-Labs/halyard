@@ -1,10 +1,11 @@
+import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Grid from '../components/grid'
 import Footer from '../components/footer'
 import Nav from '../components/nav'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Grid>
       <Head>

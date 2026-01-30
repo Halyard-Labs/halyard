@@ -1,28 +1,32 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-import { FC, HTMLProps } from 'react'
+import { FC, ButtonHTMLAttributes } from 'react'
 import Link from 'next/link'
 import styles from './styles.module.css'
 
-const Button: FC<HTMLProps<HTMLElement>> = ({
-  type = 'button',
+type ButtonProps = {
+  href?: string
+  type?: 'submit' | 'button' | 'reset'
+  children?: React.ReactNode
+  className?: string
+}
+
+const Button: FC<ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>> = ({
   href,
-  ref,
-  ...other
+  type = 'button',
+  children,
+  ...rest
 }) => {
   if (href) {
     return (
-      <Link href={href}>
-        <a className={styles.button} {...other} />
+      <Link href={href} className={styles.button}>
+        {children}
       </Link>
     )
   }
 
   return (
-    <button
-      {...other}
-      type={type as 'submit' | 'button'}
-      className={styles.button}
-    />
+    <button {...rest} type={type} className={styles.button}>
+      {children}
+    </button>
   )
 }
 
