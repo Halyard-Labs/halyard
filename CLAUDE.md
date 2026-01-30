@@ -5,10 +5,12 @@ Next.js marketing site with contact form.
 ## Commands
 
 ```bash
-yarn install     # Install dependencies
-yarn dev         # Dev server on localhost:3000
-yarn build       # Production build
-yarn start       # Start production server
+pnpm install     # Install dependencies
+pnpm dev         # Dev server on localhost:3000
+pnpm build       # Production build
+pnpm start       # Start production server
+pnpm typecheck   # Run TypeScript type checking
+pnpm lint        # Run ESLint
 ```
 
 ## Environment Variables
