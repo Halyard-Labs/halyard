@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/next'
 import Grid from '../components/grid'
 import Footer from '../components/footer'
 import Nav from '../components/nav'
@@ -33,11 +34,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="twitter:image" content="/preview.png" />
 
         <link rel="icon" href="/favicon.ico" />
-        <script async src="https://cdn.splitbee.io/sb.js" />
       </Head>
       <Nav />
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </Grid>
   )
 }
