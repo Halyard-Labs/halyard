@@ -1,45 +1,40 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Analytics } from '@vercel/analytics/next'
-import Grid from '../components/grid'
-import Footer from '../components/footer'
-import Nav from '../components/nav'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Grid>
+    <>
       <Head>
-        <title>Halyard Software Consulting</title>
+        <title>Halyard Labs | AI & Software Consultancy</title>
         <meta
           name="description"
-          content="Halyard is an Australia-based software solutions consultancy."
+          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://halyard.dev/" />
-        <meta property="og:title" content="Halyard Software Consulting" />
+        <meta property="og:title" content="Halyard Labs | AI & Software Consultancy" />
         <meta
           property="og:description"
-          content="Halyard is a boutique software and design consultancy helping to empower growing companies."
+          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
         />
         <meta property="og:image" content="/preview.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://halyard.dev/" />
-        <meta property="twitter:title" content="Halyard Software Consulting" />
+        <meta property="twitter:title" content="Halyard Labs | AI & Software Consultancy" />
         <meta
           property="twitter:description"
-          content="Halyard is a boutique software and design consultancy helping to empower growing companies."
+          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
         />
         <meta property="twitter:image" content="/preview.png" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
       <Component {...pageProps} />
-      <Footer />
       <Analytics />
-    </Grid>
+    </>
   )
 }
 

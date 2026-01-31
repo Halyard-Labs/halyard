@@ -1,4 +1,4 @@
-# Halyard Consulting Website
+# Halyard Labs Website
 
 Next.js marketing site with contact form.
 
@@ -21,10 +21,23 @@ Required in `.env.local`:
 
 ## Structure
 
-- `pages/` - Next.js pages (index, contact)
-- `pages/api/email.ts` - Contact form handler (sends receipt + forwards inquiry)
-- `components/` - UI components (button, footer, grid, logo, nav, textfield)
+- `pages/` - Next.js pages (index, about, contact)
+- `pages/og-preview.tsx` - OG image template (1200x630)
+- `pages/api/email.ts` - Contact form handler
+- `public/` - Static assets (preview.png, alex.png, favicon)
 - `lib/resend.ts` - Resend client setup
+
+## OG Image Generation
+
+To regenerate the OG preview image:
+
+```bash
+# Start dev server
+pnpm dev
+
+# Capture screenshot with Playwright (adjust port if needed)
+npx playwright screenshot --viewport-size="1200,630" http://localhost:3000/og-preview public/preview.png
+```
 
 ## Contact Form Flow
 
