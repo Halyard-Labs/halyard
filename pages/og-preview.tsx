@@ -101,8 +101,8 @@ export default function OGPreview() {
             color: '#64748b',
             maxWidth: '700px',
           }}>
-            AI strategy, systems design, and custom development
-            for companies ready to evolve.
+            Helping engineering and product teams ship real AI
+            improvements — fast.
           </p>
         </div>
 

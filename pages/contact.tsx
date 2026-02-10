@@ -133,7 +133,6 @@ export default function Contact() {
         }}>
           {isSubmitted ? (
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉</div>
               <h1 style={{
                 fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                 fontWeight: 700,
@@ -176,11 +175,30 @@ export default function Contact() {
                 fontSize: 'clamp(0.9375rem, 4vw, 1rem)',
                 color: '#64748b',
                 lineHeight: 1.7,
-                marginBottom: '2rem',
+                marginBottom: '1rem',
                 textAlign: 'center',
               }}>
                 Whether you&apos;re exploring AI opportunities or have a specific project in mind,
                 we&apos;d love to hear from you.
+              </p>
+              <p style={{
+                fontSize: '0.875rem',
+                color: '#64748b',
+                lineHeight: 1.7,
+                marginBottom: '2rem',
+                textAlign: 'center',
+              }}>
+                Prefer to book a time directly?{' '}
+                <a
+                  href="https://calendar.notion.so/meet/alhinds/gr3d13sui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: '#a78bfa',
+                    fontWeight: 500,
+                    textDecoration: 'underline',
+                  }}
+                >Schedule a call</a>
               </p>
 
               <form
@@ -277,7 +295,7 @@ export default function Contact() {
             color: '#94a3b8',
             margin: 0,
           }}>
-            Halyard Labs · ACN 123 456 789
+            Halyard Labs · ACN 694 449 637
           </p>
         </footer>
       </div>

@@ -164,10 +164,16 @@ export default function About() {
                   lineHeight: 1.7,
                   margin: 0,
                 }}>
-                  With a background in software engineering and design systems,
-                  I&apos;ve spent years helping teams build better products. Now I focus
-                  on helping companies figure out how AI can genuinely improve their work—not
-                  just chase trends.
+                  I&apos;ve spent the last decade in software engineering and product
+                  leadership — at{' '}
+                  <a href="https://atlassian.com" target="_blank" rel="noopener noreferrer" style={{ color: '#1e1b4b', fontWeight: 500 }}>Atlassian</a>,{' '}
+                  <a href="https://theguardian.com" target="_blank" rel="noopener noreferrer" style={{ color: '#1e1b4b', fontWeight: 500 }}>The Guardian</a>,{' '}
+                  <a href="https://kayosports.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#1e1b4b', fontWeight: 500 }}>Kayo</a> and most recently as the
+                  founding product and engineering lead at{' '}
+                  <a href="https://lorikeetcx.ai" target="_blank" rel="noopener noreferrer" style={{ color: '#1e1b4b', fontWeight: 500 }}>Lorikeet</a>, where I helped build an
+                  AI-powered platform from pre-revenue to Series B. I work at the intersection
+                  of AI, product and engineering to help teams ship real improvements to their
+                  process, productivity and output.
                 </p>
               </div>
             </div>
@@ -190,7 +196,7 @@ export default function About() {
               alignItems: 'center',
               gap: '0.5rem',
             }}>
-              <span>💡</span> Our approach
+              Our approach
             </h3>
             <p style={{
               fontSize: '0.9375rem',
@@ -198,10 +204,10 @@ export default function About() {
               lineHeight: 1.7,
               margin: 0,
             }}>
-              We believe the best AI implementations start with understanding your
-              actual problems, not the technology. We focus on building systems that
-              are designed to evolve—because AI is moving fast, and your infrastructure
-              should be able to keep up without starting over.
+              The best AI implementations start with understanding your actual problems,
+              not the technology. Having built and shipped AI at scale, I focus on systems
+              designed to evolve — because AI moves fast, and your infrastructure needs to
+              keep up without starting over.
             </p>
           </div>
 
@@ -215,7 +221,7 @@ export default function About() {
               color: '#64748b',
               marginBottom: '1rem',
             }}>
-              Want to chat about how AI could work for you?
+              Ready to talk about what AI can do for your team?
             </p>
             <Link href="/contact" style={{
               display: 'inline-block',
@@ -242,7 +248,7 @@ export default function About() {
             color: '#94a3b8',
             margin: 0,
           }}>
-            Halyard Labs · ACN 123 456 789
+            Halyard Labs · ACN 694 449 637
           </p>
         </footer>
       </div>

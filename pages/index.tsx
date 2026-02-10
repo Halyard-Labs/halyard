@@ -136,8 +136,8 @@ export default function Home() {
             marginBottom: '2rem',
             padding: '0 0.5rem',
           }}>
-            A boutique consultancy helping companies navigate AI adoption,
-            build intelligent systems, and design solutions that evolve with your business.
+            I help engineering, product and operations teams cut through AI noise
+            and ship real improvements to their process, productivity and output.
           </p>
           <div style={{
             display: 'flex',
@@ -179,90 +179,173 @@ export default function Home() {
             color: '#94a3b8',
             textAlign: 'center',
             marginBottom: '1rem',
-          }}>How we help</h2>
+          }}>What we do</h2>
           <div style={{
             display: 'flex',
             flexDirection: 'column',
             gap: '0.75rem',
           }}>
+            {/* Card 1: AI Readiness Audit */}
+            <Link href="/services/audit" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div style={{
               background: '#fff',
               padding: '1.25rem',
               borderRadius: '12px',
               boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              cursor: 'pointer',
             }}>
+              <div style={{
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                color: '#a78bfa',
+                marginBottom: '0.375rem',
+              }}>Assessment · 1 week</div>
               <div style={{
                 fontSize: '1rem',
                 fontWeight: 600,
                 color: '#1e1b4b',
-                marginBottom: '0.375rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
+                marginBottom: '0.5rem',
               }}>
-                <span>🤖</span> AI Strategy & Adoption
+                AI Readiness Audit
               </div>
               <p style={{
                 fontSize: '0.875rem',
                 color: '#64748b',
                 lineHeight: 1.5,
                 margin: 0,
+                marginBottom: '0.75rem',
               }}>
-                Figure out where AI fits in your business. We help you cut through the hype and find real opportunities.
+                A full audit of your existing systems, tools and workflows to find where AI
+                will save your team the most time and money. You get clear, prioritised
+                recommendations you can act on immediately.
               </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.375rem',
+              }}>
+                {['Discovery call', 'Systems & workflow audit', 'Opportunity analysis', 'Prioritised roadmap'].map((step, i) => (
+                  <span key={i} style={{
+                    fontSize: '0.6875rem',
+                    color: '#64748b',
+                    background: '#f8fafc',
+                    padding: '0.25rem 0.5rem',
+                    borderRadius: '6px',
+                  }}>{step}</span>
+                ))}
+              </div>
             </div>
+            </Link>
+
+            {/* Card 2: AI Tooling & Training */}
+            <Link href="/services/tooling" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div style={{
               background: '#fff',
               padding: '1.25rem',
               borderRadius: '12px',
               boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              cursor: 'pointer',
             }}>
+              <div style={{
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                color: '#a78bfa',
+                marginBottom: '0.375rem',
+              }}>Build + Train · 4-8 weeks</div>
               <div style={{
                 fontSize: '1rem',
                 fontWeight: 600,
                 color: '#1e1b4b',
-                marginBottom: '0.375rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
+                marginBottom: '0.5rem',
               }}>
-                <span>🎨</span> Systems Design
+                AI Tooling & Training
               </div>
               <p style={{
                 fontSize: '0.875rem',
                 color: '#64748b',
                 lineHeight: 1.5,
                 margin: 0,
+                marginBottom: '0.75rem',
               }}>
-                Build software architecture that grows with you. We design systems meant to evolve, not be replaced.
+                I set up the right AI tooling for your team&apos;s highest-leverage problems, then
+                train your people to run with it. You don&apos;t just get tools — you get a team
+                that knows how to use them and improve on them after I leave.
               </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.375rem',
+              }}>
+                {['Scoping call', 'Audit & analysis', 'Tool setup & configuration', 'Guided rollout', 'Training & handover'].map((step, i) => (
+                  <span key={i} style={{
+                    fontSize: '0.6875rem',
+                    color: '#64748b',
+                    background: '#f8fafc',
+                    padding: '0.25rem 0.5rem',
+                    borderRadius: '6px',
+                  }}>{step}</span>
+                ))}
+              </div>
             </div>
+            </Link>
+
+            {/* Card 3: Fractional Technical Leadership */}
+            <Link href="/services/leadership" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div style={{
               background: '#fff',
               padding: '1.25rem',
               borderRadius: '12px',
               boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              cursor: 'pointer',
             }}>
+              <div style={{
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                color: '#a78bfa',
+                marginBottom: '0.375rem',
+              }}>Fractional · 3-6 months</div>
               <div style={{
                 fontSize: '1rem',
                 fontWeight: 600,
                 color: '#1e1b4b',
-                marginBottom: '0.375rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
+                marginBottom: '0.5rem',
               }}>
-                <span>🛠️</span> Custom Development
+                Embedded Technical Leadership
               </div>
               <p style={{
                 fontSize: '0.875rem',
                 color: '#64748b',
                 lineHeight: 1.5,
                 margin: 0,
+                marginBottom: '0.75rem',
               }}>
-                From prototypes to production. We build the tools and integrations that make AI work for your team.
+                A senior technical and product leader inside your team without a full-time hire. I
+                work alongside your engineers to set direction, unblock delivery and build the
+                capability for your team to own AI long-term.
               </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.375rem',
+              }}>
+                {['Strategy & assessment', 'Architecture & roadmap', 'Delivery leadership', 'Team capability building', 'Structured transition'].map((step, i) => (
+                  <span key={i} style={{
+                    fontSize: '0.6875rem',
+                    color: '#64748b',
+                    background: '#f8fafc',
+                    padding: '0.25rem 0.5rem',
+                    borderRadius: '6px',
+                  }}>{step}</span>
+                ))}
+              </div>
             </div>
+            </Link>
           </div>
         </section>
 
@@ -279,7 +362,7 @@ export default function Home() {
             color: '#94a3b8',
             margin: 0,
           }}>
-            Halyard Labs · ACN 123 456 789
+            Halyard Labs · ACN 694 449 637
           </p>
         </footer>
       </div>
