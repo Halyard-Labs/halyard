@@ -10,14 +10,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Halyard Labs | AI & Software Consultancy</title>
         <meta
           name="description"
-          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
+          content="I help engineering, product and operations teams cut through AI noise and ship real improvements to their process, productivity and output."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://halyard.dev/" />
         <meta property="og:title" content="Halyard Labs | AI & Software Consultancy" />
         <meta
           property="og:description"
-          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
+          content="I help engineering, product and operations teams cut through AI noise and ship real improvements to their process, productivity and output."
         />
         <meta property="og:image" content="/preview.png" />
 
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="twitter:title" content="Halyard Labs | AI & Software Consultancy" />
         <meta
           property="twitter:description"
-          content="A boutique consultancy helping companies navigate AI adoption, build intelligent systems, and design solutions that evolve."
+          content="I help engineering, product and operations teams cut through AI noise and ship real improvements to their process, productivity and output."
         />
         <meta property="twitter:image" content="/preview.png" />
 
