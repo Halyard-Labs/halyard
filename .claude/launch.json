@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"]
+    },
+    {
+      "name": "build",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["build"]
+    }
+  ]
+}
